@@ -1,0 +1,8 @@
+#cmd - z : open -a "Browser"
+#cmd - g : open -a "Ghostty"
+#cmd - s : open -a "Slack"
+#cmd - o : open -a "Obsidian"
+#cmd - d : open -a "DBeaver"
+#cmd - e : open -a "Finder"
+#cmd - y : open -a "Yaak"
+

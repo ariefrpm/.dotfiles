@@ -24,7 +24,7 @@ enable-normalization-opposite-orientation-for-nested-containers = true
 accordion-padding = 30
 
 # Possible values: tiles|accordion
-default-root-container-layout = 'tiles'
+default-root-container-layout = 'accordion'
 
 # Possible values: horizontal|vertical|auto
 # 'auto' means: wide monitor (anything wider than high) gets horizontal orientation,
@@ -114,37 +114,37 @@ alt-shift-minus = 'resize smart -50'
 alt-shift-equal = 'resize smart +50'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-alt-1 = 'workspace 1'
-alt-2 = 'workspace 2'
-alt-3 = 'workspace 3'
-alt-4 = 'workspace 4'
-alt-5 = 'workspace 5'
-alt-6 = 'workspace 6'
-alt-7 = 'workspace 7'
-alt-8 = 'workspace 8'
-alt-9 = 'workspace 9'
-alt-a = 'workspace A' # In your config, you can drop workspace bindings that you don't need
-alt-b = 'workspace B'
+cmd-1 = 'workspace 1'
+cmd-2 = 'workspace 2'
+cmd-3 = 'workspace 3'
+cmd-4 = 'workspace 4'
+cmd-5 = 'workspace 5'
+cmd-6 = 'workspace 6'
+cmd-7 = 'workspace 7'
+cmd-8 = 'workspace 8'
+cmd-9 = 'workspace 9'
+cmd-a = 'workspace A' # In your config, you can drop workspace bindings that you don't need
+cmd-b = 'workspace B'
 alt-c = 'workspace C'
-alt-d = 'workspace D'
-alt-e = 'workspace E'
+cmd-d = 'workspace D'
+cmd-e = 'workspace E'
 alt-f = 'workspace F'
-alt-g = 'workspace G'
-alt-i = 'workspace I'
-alt-m = 'workspace M'
-alt-n = 'workspace N'
-alt-o = 'workspace O'
-alt-p = 'workspace P'
-alt-q = 'workspace Q'
-alt-r = 'workspace R'
-alt-s = 'workspace S'
-alt-t = 'workspace T'
-alt-u = 'workspace U'
+cmd-g = 'workspace G'
+cmd-i = 'workspace I'
+cmd-m = 'workspace M'
+cmd-n = 'workspace N'
+cmd-o = 'workspace O'
+cmd-p = 'workspace P'
+cmd-q = 'workspace Q'
+cmd-r = 'workspace R'
+cmd-s = 'workspace S'
+cmd-t = 'workspace T'
+cmd-u = 'workspace U'
 alt-v = 'workspace V'
-alt-w = 'workspace W'
-alt-x = 'workspace X'
-alt-y = 'workspace Y'
-alt-z = 'workspace Z'
+cmd-w = 'workspace W'
+cmd-x = 'workspace X'
+cmd-y = 'workspace Y'
+cmd-z = 'workspace Z'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-1 = 'move-node-to-workspace 1'
@@ -202,3 +202,41 @@ alt-shift-h = ['join-with left', 'mode main']
 alt-shift-j = ['join-with down', 'mode main']
 alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'Ghostty'
+run = ['layout floating', 'move-node-to-workspace G'] 
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'Zen Browser'
+run = ['layout floating', 'move-node-to-workspace W'] 
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'Obsidian'
+run = ['layout floating', 'move-node-to-workspace O'] 
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'Slack'
+run = ['layout floating', 'move-node-to-workspace S'] 
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'DBeaver'
+run = ['layout floating', 'move-node-to-workspace D'] 
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'Genymotion'
+run = ['layout floating', 'move-node-to-workspace M'] 
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'Yaak'
+run = ['layout floating', 'move-node-to-workspace A'] 
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'Finder'
+run = ['layout floating', 'move-node-to-workspace F'] 
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'System Setting'
+run = ['layout floating', 'move-node-to-workspace T'] 
+
+

@@ -1,0 +1,18 @@
+format = """
+$directory\
+$username\
+$hostname\
+$time\
+$git_branch\
+$git_state\
+$php\
+$golang\
+"""
+
+[php]
+format = '[$symbol]($style)'
+symbol = '🐘php '
+
+[golang]
+format = '[$symbol]($style)'
+symbol = '🐹go '

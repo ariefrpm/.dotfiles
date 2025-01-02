@@ -1,0 +1,27 @@
+export PATH="/opt/homebrew/opt/php@7.3/bin:$PATH"
+export PATH="/opt/homebrew/opt/php@7.3/sbin:$PATH"
+#export PATH="/opt/homebrew/opt/php@7.3/bin:$PATH"
+#export PATH="/opt/homebrew/opt/php@7.3/sbin:$PATH"
+export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+#export PATH="/opt/homebrew/opt/php@8.2/bin:$PATH"
+#export PATH="/opt/homebrew/opt/php@8.2/sbin:$PATH"
+export PATH="/opt/homebrew/opt/mysql-client@8.4/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export PATH="/opt/homebrew/opt/node@23/bin:$PATH"
+
+bindkey -M viins '^ ' autosuggest-accept
+
+source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+alias ls='eza'
+alias ll='eza -lhg'
+alias lla='eza -alhg'
+alias tree='eza --tree'
+
+plugins=(git keychain gpg-agent zsh-vi-mode)
+
+eval "$(starship init zsh)"
+
+#zstyle :omz:plugins:keychain agents ssh,gpg
+#zstyle :omz:plugins:keychain identities id_rsa 13C68EBC01CB92E6

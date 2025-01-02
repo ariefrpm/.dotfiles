@@ -1,0 +1,4 @@
+theme = catppuccin-mocha
+macos-titlebar-style = hidden
+window-padding-y = 6,0
+window-padding-x = 4,2
